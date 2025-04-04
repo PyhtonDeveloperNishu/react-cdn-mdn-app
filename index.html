@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React CDN App</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="root"></div>
+    <a href=""></a>
+    <script> 
+        const rootDiv = document.getElementById("root");
+        
+        const h1 = React.createElement("h1",{className:"heading"},"Topics covered");
+        const p1 = React.createElement("p",{className:"intro-text"},"The following is a list of all the topics we cover in the MDN learing area.")
+
+        //getting start section
+        const anchor = React.createElement("p",{className:"section-title"},React.createElement("a",{className:"anchor",href:"#"},"Getting started with the web"));
+        const p3 = React.createElement("p",{className:"section-des"},"Provides a practical intro to web dev for complete beginners.")
+
+        // HTML Structure
+        const anchor2 = React.createElement("p",{className:"section-title"},React.createElement("a",{className:"anchor",href:"#"},"HTML-Structing the web"));
+        const p4 = React.createElement("p",{className:"section-des"},"HTML is the lang that we use to structure the diffrent parts of our content and define what their meaning or purpose is . this topic teaches HTML in deatil.");
+       
+        // CSS - Styling 
+        const anchor3 = React.createElement("p",{className:"section-title"}, React.createElement("a",{className:"anchor",href:"#"},"CSS-Styling the web"));
+        const p5 = React.createElement("p",{className:"section-des"},"CSS is the lang that we use to control our web content's style and layout,as well as adding behavior like animation. this topic provides comprehensive coverage of CSS.");
+
+        const app = React.createElement(React.Fragment,{},[h1,p1,anchor,p3,anchor2,p4,anchor3,p5]);
+
+        const root = ReactDOM.createRoot(rootDiv);
+        root.render(app);
+
+
+
+    </script>
+</body>
+</html>
