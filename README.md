@@ -4,7 +4,7 @@ A simple React app built using **CDN** without JSX or bundlers — great for beg
 
 ---
  ## 🌐 Live Preview (Optional)
- 🔗 [Live Preview]()
+ 🔗 [Live Preview](https://pyhtondevelopernishu.github.io/react-cdn-mdn-app/)
 
 
 ## 📌 Project Overview
@@ -38,7 +38,7 @@ This project mimics the layout of MDN's learning portal, displaying a list of we
 1. **Clone or Download** this repo:
    ```bash
    git clone https://github.com/PyhtonDeveloperNishu/react-cdn-mdn-app.git
-   
+
    cd react-cdn-mdn-app
 
 
